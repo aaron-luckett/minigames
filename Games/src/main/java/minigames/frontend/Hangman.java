@@ -20,6 +20,7 @@ import java.util.ResourceBundle;
 
 public class Hangman implements Initializable {
 
+    //Variables
     public Circle head;
     public Line body;
     public Line leftArm;
