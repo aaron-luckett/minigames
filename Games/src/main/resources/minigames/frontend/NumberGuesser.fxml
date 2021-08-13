@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minigames.frontend.NumberGuesser">
+   <children>
+      <Text layoutX="137.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guess The Number">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="actualNumber" layoutX="199.0" layoutY="121.0" text="???">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberEntry" layoutX="141.0" layoutY="165.0" promptText="Enter Guess..." />
+      <Label layoutX="142.0" layoutY="321.0" text="Number Of Guesses:" />
+      <Label fx:id="guessesLabel" layoutX="264.0" layoutY="321.0" text="0" />
+      <Label fx:id="higherLower" layoutX="155.0" layoutY="211.0" text="Disaply if higher of lower" />
+      <Button fx:id="reset" layoutX="174.0" layoutY="258.0" mnemonicParsing="false" onAction="#resetNumber" prefHeight="27.0" prefWidth="94.0" text="Reset" />
+      <Button fx:id="homeButton" layoutX="36.0" layoutY="26.0" mnemonicParsing="false" onAction="#changePage" text="Home" />
+      <Button fx:id="enter" layoutX="308.0" layoutY="165.0" mnemonicParsing="false" onAction="#getAnswer" text="Enter" />
+      <Label layoutX="151.0" layoutY="75.0" text="Quickest Guess:" />
+      <Label fx:id="quickGuess" layoutX="253.0" layoutY="75.0" text="0" />
+   </children>
+</AnchorPane>
